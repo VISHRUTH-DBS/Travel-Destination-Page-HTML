@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,600&family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRAVEL DESTINATION PAGE</title>
+    <style>
+   *{font-family: 'Crimson Text', serif;
+     font-family: 'Noto Sans JP', sans-serif;
+     font-size: 15px;
+    scroll-behavior:smooth;
+    list-style: none;
+    text-decoration: none;
+   }
+   
+   body {
+        font-family: 'Arial', sans-serif;
+        margin:10px;
+        padding:25px;
+        box-sizing: border-box;
+        background-color: black;
+        color: white;
+    }
+    
+    header {
+        background-color:#333333;
+        color:white;
+        text-align: center;
+        padding: 20px;
+    }
+    
+    header h2 {
+        margin: 10px;
+    }
+    
+    section {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+    }
+    
+    ul {
+        list-style-type:circle;
+        padding: 0;
+    }
+    
+    ul li {
+        margin-bottom: 10px;
+    }
+    
+    
+    .image-container {
+        display:flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .image-container img {
+        width: 50%;
+        margin-bottom: 10px;
+    }
+     .container {
+    display: flex;
+}
+.table-of-contents {
+    width: 200px;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    overflow-y: auto;
+}
+.table-of-contents ul {
+    list-style-type:circle;
+    padding: 0;
+}
+.table-of-contents li {
+    margin-bottom: 10px;
+}
+.table-of-contents a {
+    text-decoration: none;
+    color: #007BFF;
+    
+}
+.table-of-contents a:hover{
+    color:orange;
+    box-shadow: 0 0 10px rgba(51, 195, 51, 0.333),
+    0 0 20px rgba(51, 195, 51, 0.333),
+    0 0 40px rgba(51, 195, 51, 0.333),
+    0 0 80px rgba(51, 195, 51, 0.333),
+    0 0 120px rgba(51, 195, 51, 0.333),
+    0 0 140px rgba(51, 195, 51, 0.333);
+    color: red;
+}
+
+.content {
+            max-width: 800px;
+            margin: 20px auto;
+            padding:0;
+            margin-left: 10px;
+            width: 100%;
+            box-sizing: border-box;}
+.A{
+    height: 70px;
+    width: 3cm;
+    border: white solid 3px;
+    padding: 2px;
+    display:inline-flex;
+    justify-content:space-around;
+    margin-right: 20px;
+    text-decoration: none;
+    transition:all 0.6s ease-in-out; }
+.A a {
+    text-decoration: none;    }
+.A a:visited{
+    color:red;
+    }
+.A a:active{
+    color:violet;
+}
+nav a.active {
+    color: violet;
+    
+}
+.A:hover{
+    background-color:#f5f5f5;
+    box-shadow: 0 0 10px rgba(51, 195, 51, 0.333),
+    0 0 20px rgba(51, 195, 51, 0.333),
+    0 0 40px rgba(51, 195, 51, 0.333),
+    0 0 80px rgba(51, 195, 51, 0.333),
+    0 0 120px rgba(51, 195, 51, 0.333),
+    0 0 140px rgba(51, 195, 51, 0.333);
+    transform: translateY(-5px);
+    }
+form{
+    display: inline;
+}
+fieldset{
+    width: 23cm;
+    justify-content: center;
+}
+nav {
+    font-size: 25px;
+    display: flex;
+    list-style-type: none;
+    padding:0;
+    justify-content: space-around;
+    width: 12cm;}
+nav li {
+    margin-right: 20px; 
+}
+nav a {
+    text-decoration: none;
+    color:whitesmoke;
+}
+nav :hover{
+    color:orange;
+    box-shadow: 0 0 10px rgba(51, 195, 51, 0.333),
+    0 0 20px rgba(51, 195, 51, 0.333),
+    0 0 40px rgba(51, 195, 51, 0.333),
+    0 0 80px rgba(51, 195, 51, 0.333),
+    0 0 120px rgba(51, 195, 51, 0.333),
+    0 0 140px rgba(51, 195, 51, 0.333);}
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;}
+
+    footer a:hover{
+    color:orange;
+    box-shadow: 0 0 10px rgba(51, 195, 51, 0.333),
+    0 0 20px rgba(51, 195, 51, 0.333),
+    0 0 40px rgba(51, 195, 51, 0.333),
+    0 0 80px rgba(51, 195, 51, 0.333),
+    0 0 120px rgba(51, 195, 51, 0.333),
+    0 0 140px rgba(51, 195, 51, 0.333);
+    color: red;
+}
+
+footer a {
+    text-decoration: none;    }
+footer a:visited{
+    color:red;
+    }
+footer a:active{
+    color:violet;
+}
+.p{
+    display: flex;
+}
+
+.main{
+    font-size: 35px;
+}
+
+
+
+</style>
+    
+</head>
+<body>
+    <header class="logo" id="l">
+        <img src="TravalDES.jpg" style="height: 4cm; width: 3cm; border-radius:50%;" alt="Travel Destination Logo">
+        <h1>TRAVAL DESTINATION</h1>
+    </header>
+    
+    
+    <header>
+        <h1 class="main">Explore the WORLD</h1>
+        <p>Your Adventure Begins Here</p>
+    </header>
+    <nav>
+        <a href="#l">Home</a>
+        <a href="about.html">About</a>
+        <a href="#toc">Services</a>
+        <a href="about.html">Contact</a>
+    </nav>
+    <div class="container">
+        <div class="table-of-contents" id="toc">
+            <h2>DESTINATIONS</h2>
+            <ul>
+                <li><a class="toc-link" href="#Bali">Bali</a></li>
+                <li><a class="toc-link" href="#Maldives">Maldives</a></li>
+                <li><a class="toc-link" href="#Great Barrier Reef">Great Barrier Reef</a></li>
+                <li><a class="toc-link" href="#Victoria Falls">Victoria Falls</a></li>
+                <li><a class="toc-link" href="#Grand Canyon">Grand Canyon</a></li>
+            </ul>
+        </div>
+        
+
+        <div class="content">
+            <div id="Bali">
+                <h2>Bali, Indonesia</h2>
+                <p>
+                    Bali is a major world tourist destination, known for its highly developed arts, including traditional and modern dance, sculpture, painting, leather, metalworking, and music. The island is also famous for its yoga and meditation retreats, making it a popular destination for wellness tourism.
+                </p>
+                <img src="https://a.cdn-hotels.com/gdcs/production143/d1112/c4fedab1-4041-4db5-9245-97439472cf2c.jpg" style="height: 500px; width: 1000px;" alt="Temple at BALI">
+                <img src="https://media.istockphoto.com/id/1035586746/photo/tourist-ships-anchored-on-the-gili-rengit-beach.jpg?s=612x612&w=0&k=20&c=9HBy1GOX7-kz9dp8zL_sU0RQOIGnwNxsZ-LMdhvwjt8=" style="height: 500px; width: 1000px;" alt="Beach at bali">
+                <img src="http://www.telegraph.co.uk/content/dam/Travel/hotels/asia/indonesia/bali/como-shambhala-bali-villa2-xlarge.jpg" style="height: 500px; width: 1000px;" alt="Resort at Bali">
+                <h3>Landmarks and Attractions:</h3>
+                <ul>
+                    <li>Ubud</li>
+                    <p>Known as the cultural heart of Bali, Ubud is famous for its art markets, museums, and traditional dance performances.</p>
+                    <li>Tanah Lot</li>
+                    <p>A rock formation off the island's northwest coast, home to a pilgrimage temple and a popular sunset viewpoint.</p>
+                    <li>Uluwatu Temple</li>
+                    <p>Perched on a cliff, this sea temple offers stunning views and traditional Kecak dance performances.</p>
+                    <li>Tegallalang Rice Terraces</li>
+                    <p>Famous for its beautiful scenes of rice paddies.</p>
+                   
+        </ul>
+       
+            <fieldset>
+                <legend>Ticket Information:</legend>
+                <label for="TI" class="TI" >available flights</label>
+                <div class="A">
+                    <p><a href="travel4.html">IndiGo </a></p>
+                </div>
+                <div class="A">
+                    <p><a href="travel4.html">AirIndia </a></p>
+                </div>
+                <div class="A">
+                    <p><a href="travel4.html">AirIndiaExpress </a></p>
+                </div>
+                <div class="A">
+                    <p><a href="travel4.html">Qatar Airways </a></p>
+                </div>
+                <div class="A">
+                    <p><a href="travel4.html">Air Arabia </a></p>
+                </div>
+                
+                
+
+            </fieldset>
+        
+            </div>
+
+            <div id="Maldives">
+                <h2>The Maldives</h2>
+        <p>
+            This tropical nation in the Indian Ocean is made up of more than 1,000 coral islands. It's home to some of the world's most luxurious hotel resorts, with white sandy beaches, underwater villas and restaurants and bright blue waters.
+        </p>
+        <img src="https://media.cnn.com/api/v1/images/stellar/prod/230516112548-01-crossroads-maldives-aerial.jpg?c=original" style="height: 500px; width: 1000px;" alt="Resort at Maldives">
+        <img src="https://media.architecturaldigest.com/photos/6032b3c9a0b9bd2edd5510d1/1:1/w_2880,h_2880,c_limit/Hero_Soneva%20Jani%20Chapter%20Two%20by%20Aksham%20Abdul%20Ghadir.jpg" style="height: 500px; width: 1000px;" alt="Beach and Resort at Maldives">
+        <img src="https://visitmaldives.s3.amazonaws.com/BxopdMov/c/uhjfznv6-large.jpg" style="height: 500px; width: 1000px;" alt=" Underwater Resort at Maldives">
+        <h3>Landmarks and Attractions:</h3>
+        <ul>
+            <li>Underwater Restaurants</li>
+            <p>The Maldives is home to the world's first underwater restaurant, such as Ithaa Undersea Restaurant at Conrad Maldives Rangali Island.</p>
+            <li>Coral Reefs and Atolls</li>
+            <p>Ari Atoll: Famous for its stunning coral reefs and diverse marine life, Ari Atoll is a popular destination for snorkeling and diving.
+                Baa Atoll Biosphere Reserve: A UNESCO Biosphere Reserve known for its rich biodiversity, including manta rays and whale sharks.</p>
+            <li>Thulusdhoo Island</li>
+            <p>Known for its vibrant local culture and the production of traditional Maldivian crafts, including lacquerware and traditional Maldivian sarongs called "feyli".</p>
+           
+</ul>
+
+    <fieldset>
+        <legend>Ticket Information:</legend>
+        <label for="TI" class="TI" >available flights</label>
+        <div class="A">
+            <p><a href="travel4.html">IndiGo </a></p>
+                            </div>
+                            <div class="A">
+                                <p><a href="travel4.html">AirIndia </a></p>
+                            </div>
+                            <div class="A">
+                                <p><a href="travel4.html">AirIndiaExpress </a></p>
+                            </div>
+                            <div class="A">
+                                <p><a href="travel4.html">Qatar Airways </a></p>
+                            </div>
+                            <div class="A">
+                                <p><a href="travel4.html">Air Arabia </a></p>
+        </div>
+        
+        
+
+    </fieldset>
+
+            </div>
+
+            <div id="Great Barrier Reef">
+                <h2>Great Barrier Reef, Australia</h2>
+                <img src="https://thumbor.bigedition.com/snorkle-destinations-great-barrier-reef-australia/8lFTVnTpueTJzqvydiaVcNceEC4=/800x600/filters:format(webp):quality(80)/granite-web-prod/fc/eb/fcebc0a2157b44db960006631c91636c.jpeg"  style="height: 500px; width: 1000px;" alt="Great Barrier Reef, Australia">
+                <p>As the largest reef in the world, the Great Barrier Reef is home to thousands of marine species. This makes it a paradise for scuba diving or snorkeling. 
+        
+                    The reef system is truly gigantic, with over 600 islands and about 2,900 individual reefs. This is one of Australia's greatest prides, but it's also a planetary national treasure. Seeing it with your own two eyes is an experience that is incredible beyond words.</p>
+                    
+                        <fieldset>
+                            <legend>Ticket Information:</legend>
+                            <label for="TI" class="TI" >available flights</label>
+                            <div class="A">
+                                <p><a href="travel4.html">IndiGo </a></p>
+                            </div>
+                            <div class="A">
+                                <p><a href="travel4.html">AirIndia </a></p>
+                            </div>
+                            <div class="A">
+                                <p><a href="travel4.html">AirIndiaExpress </a></p>
+                            </div>
+                            <div class="A">
+                                <p><a href="travel4.html">Qatar Airways </a></p>
+                            </div>
+                            <div class="A">
+                                <p><a href="travel4.html">Air Arabia </a></p>
+                            </div>
+                            
+                            
+            
+                        </fieldset>
+                    
+        
+            </div>
+
+            <div id="Victoria Falls">
+                <h2>Victoria Falls, Zimbabwe and Zambia</h2>
+                <img src="https://www.travelandleisure.com/thmb/18Z3yXaDJFxtr4aTWoik6zqg96Q=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/victoria-falls-zimbabwe-zambia-MOSTBEAUTIFUL0921-0c0230b660a04cbabe6a1536df38a313.jpg" style="height: 500px; width: 1000px;" alt="Victoria Falls">
+                <p>Victoria Falls is renowned for its stunning natural beauty. The sheer size and power of the falls, combined with the surrounding rainforest and the mist rising from the cascading water, create a mesmerizing and unforgettable spectacle.It is one of the largest waterfalls on the planet, with a width of about 1,708 meters and a height of about 108 meters. Its sheer size and volume of water make it a unique and unparalleled natural wonder.The region offers a wide range of adventure activities, appealing to thrill-seekers. Activities include bungee jumping from the Victoria Falls Bridge, white-water rafting on the Zambezi River, zip-lining, helicopter flights, and more.The surrounding areas are rich in wildlife, and visitors may encounter various species of birds, mammals, and reptiles. The nearby national parks offer opportunities for safaris and nature walks.It is a paradise for photographers. The ever-changing play of light, the rainbows created by the mist, and the diverse landscapes offer countless opportunities for capturing breathtaking images.</p>
+                
+                    <fieldset>
+                        <legend>Ticket Information:</legend>
+                        <label for="TI" class="TI" >available flights</label>
+                        <div class="A">
+                            <p><a href="travel4.html">IndiGo </a></p>
+                        </div>
+                        <div class="A">
+                            <p><a href="travel4.html">AirIndia </a></p>
+                        </div>
+                        <div class="A">
+                            <p><a href="travel4.html">AirIndiaExpress </a></p>
+                        </div>
+                        <div class="A">
+                            <p><a href="travel4.html">Qatar Airways </a></p>
+                        </div>
+                        <div class="A">
+                            <p><a href="travel4.html">Air Arabia </a></p>
+                        </div>
+                        
+                        
+        
+                    </fieldset>
+                
+            </div>
+            <div id="Grand Canyon">
+                <h2>Grand canyon,Arizona, USA</h2>
+                <img src="https://www.fodors.com/wp-content/uploads/2018/09/Hero_GrandCanyon101_Hero_shutterstock_197685827.jpg" style="height: 500px; width: 1000px;" alt="Grand canyon,Arizona, USA">
+                <p>The Grand Canyon is known for its breathtaking and awe-inspiring geological formations. The canyon itself is a colossal gorge carved by the Colorado River over millions of years, revealing intricate layers of rock that tell a fascinating geological story.It offers some of the most stunning and expansive scenic views in the world. From the rim, visitors can see the vast expanse of the canyon, showcasing a mesmerizing play of colors, shadows, and rock formations.The Grand Canyon provides numerous hiking trails, ranging from easy walks along the rim to challenging hikes into the canyon itself. Outdoor enthusiasts can explore the landscape, experience different ecosystems, and enjoy activities such as backpacking, river rafting, and mule rides.It is a photographer's dream. The play of light and shadow, the variety of colors, and the immense scale of the canyon offer endless opportunities for capturing stunning photographs.The Grand Canyon is easily accessible, with multiple entrances and viewpoints along the rim. Visitors can choose the level of activity and the areas they wish to explore, making it suitable for a wide range of ages and physical abilities.</p>
+                
+                    <fieldset>
+                        <legend>Ticket Information:</legend>
+                        <label for="TI" class="TI" >available flights</label>
+                        <div class="A">
+                            <p><a href="travel4.html">IndiGo </a></p>
+                        </div>
+                        <div class="A">
+                            <p><a href="travel4.html">AirIndia </a></p>
+                        </div>
+                        <div class="A">
+                            <p><a href="travel4.html">AirIndiaExpress </a></p>
+                        </div>
+                        <div class="A">
+                            <p><a href="travel4.html">Qatar Airways </a></p>
+                        </div>
+                        <div class="A">
+                            <p><a href="travel4.html">Air Arabia </a></p>
+                        </div>
+                        
+                        
+        
+                    </fieldset><br><br>
+                
+            </div>
+            
+        </div>
+        <footer>
+            <p>&copy; 2024 Travel destination | <a href="about.html">Privacy Policy</a> | <a href="about.html">Terms of Service</a></p>
+        </footer>
+        
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Form</title>
+    <style>
+       *{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Hedvig Letters Sans', sans-serif;
+    font-family: 'Playpen Sans', cursive;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+body{
+    background-image: url("https://s1.1zoom.me/big0/267/Airplane_Sky_Clouds_450930.jpg");
+    background-repeat:no-repeat;
+    background-position: 100%;
+    background-size: 250vh;
+    top:0;
+    right:0;
+    width:100%;
+    z-index:1000;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px;
+    justify-content: space-around;
+    
+        color:black;
+}
+
+footer {
+        background-color:black;
+        color:white;
+        text-align: center;
+        padding: 10px;
+        position: fixed;
+        bottom:0;
+        width: 100%;
+        align-items:end;
+    }
+    form {
+    background-color: rgba(255, 255, 255, 0.7); 
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+
+    </style>
+</head>
+
+<body>
+
+<form action="RS.html">
+ <label for="name" class="required">Your Name:</label>
+    <input type="text" id="name" name="name" required><br><br>
+    <label for="email" class="required">Your Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+    <label for="gender" class="required">Gender:</label>
+    <input type="radio" id="male" name="gender" value="male">Male
+    <input type="radio" id="female" name="gender" value="female">Female
+    <input type="radio" id="other" name="gender" value="other">Other<br><br>
+    <label for="age" class="required">Age:</label>
+    <input type="number" id="age" name="age" required><br><br>
+    <label for="aadar" class="required">Aadar number:</label>
+    <input type="number" id="aadar" name="aadar" required><br><br>
+    <label for="dob" class="required">Date of birth:</label>
+    <input type="date" id="dob" name="dob" required><br>
+    <br><br>
+    <label for="nop" class="required">number of person's travelling</label>
+    <input type="number" id="nop" name="nop" required><br><br>
+    <label for="name2" >Name of 2nd person:</label>
+    <input type="text" id="name2" name="name2" ><br><br>
+    <label for="age2">Age of 2nd person:</label>
+    <input type="number" id="age2" name="age2"><br><br>
+    <label for="name3">Name of 3rd person:</label>
+    <input type="text" id="name3" name="name3"><br><br>
+    <label for="age3">Age of 3rd person:</label>
+    <input type="number" id="age3" name="age3"><br><br>
+
+<button type="submit">Submit</button>
+</form>
+<footer>
+    <p>&copy; 2024 Travel destination | <a href="#POLICY ">Privacy Policy</a> | <a href="#TERMS">Terms of Service</a></p>
+</footer>
+<label for=""></label>
+
+</body>
+</html>
+
